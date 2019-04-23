@@ -16,7 +16,15 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                use: [{ loader: "babel-loader" }]
+                use: [
+                    { loader: "babel-loader" },
+                    {
+                        loader: "linaria/loader",
+                        options: {
+                            sourceMap: process.env.NODE_ENV !== "production"
+                        }
+                    }
+                ]
             }
         ]
     }
