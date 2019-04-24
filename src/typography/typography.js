@@ -1,7 +1,7 @@
 // @flow
-import { styled } from "linaria/react";
+import styled from "styled-components/primitives";
 
-export const HeadingH1 = styled.h1`
+export const HeadingH1 = styled.Text`
     font-family: Nunito;
     font-size: 72px;
     color: #000000;
